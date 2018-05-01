@@ -22,7 +22,6 @@ install:
 
 script:
  - ./mvnw test -B
- - ./mvnw clean org.jacoco:jacoco-maven-plugin:prepare-agent package sonar:sonar -DskipTests=true
 
 cache:
   directories:
@@ -31,6 +30,7 @@ cache:
 
 after_success:
   - bash <(curl -s https://codecov.io/bash)
+  - ./mvnw clean org.jacoco:jacoco-maven-plugin:prepare-agent package sonar:sonar -DskipTests=true
 
 before_deploy:
   - ./mvnw clean deploy
