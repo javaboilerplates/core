@@ -33,6 +33,15 @@ public class SampleEntityTest {
         boolean result = sampleEntity.equals(new SampleEntity().name(DEFAULT_NAME));
         assertTrue(result);
 
+        result = sampleEntity.equals(sampleEntity);
+        assertTrue(result);
+
+        result = sampleEntity.equals(null);
+        assertFalse(result);
+
+        result = sampleEntity.equals(new String());
+        assertFalse(result);
+
         result = sampleEntity.equals(new SampleEntity().name(SET_NAME));
         assertFalse(result);
     }
