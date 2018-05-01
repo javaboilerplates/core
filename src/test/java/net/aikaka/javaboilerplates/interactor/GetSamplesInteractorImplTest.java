@@ -31,7 +31,7 @@ public class GetSamplesInteractorImplTest {
         interactor.setSamples(new ArrayList<>());
         List<SampleEntity> list = interactor.getSamples();
         assertNotNull(list);
-        assertEquals(list.size(), 0);
+        assertEquals(0, list.size());
     }
 
     @Test
@@ -39,6 +39,6 @@ public class GetSamplesInteractorImplTest {
         interactor = new GetSamplesInteractorImpl(new ArrayList<>());
         List<SampleEntity> list = interactor.getSamples();
         assertNotNull(list);
-        assertEquals(list.size(), 0);
+        assertEquals(0, list.size());
     }
 }

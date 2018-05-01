@@ -3,7 +3,6 @@ package net.aikaka.javaboilerplates.interactor;
 import net.aikaka.javaboilerplates.entity.SampleEntity;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -16,7 +15,7 @@ public class GetSamplesInteractorImpl implements GetSamplesInteractor {
     }
 
     public GetSamplesInteractorImpl() {
-        String names[] = new String[]{"Kaka", "Ronaldo"};
+        String[] names = new String[]{"Kaka", "Ronaldo"};
 
         this.samples = new ArrayList<>();
 
@@ -26,13 +25,13 @@ public class GetSamplesInteractorImpl implements GetSamplesInteractor {
     }
 
     @Override
-    public List<SampleEntity> All() {
+    public List<SampleEntity> all() {
         return samples;
     }
 
 
     @Override
-    public List<SampleEntity> AllByName(final String keyword) {
+    public List<SampleEntity> allByName(final String keyword) {
         if (keyword == null)
             return new ArrayList<>();
 

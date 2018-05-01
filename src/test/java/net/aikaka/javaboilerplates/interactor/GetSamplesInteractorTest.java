@@ -20,19 +20,19 @@ public class GetSamplesInteractorTest {
 
     @Test
     public void testAll() {
-        List<SampleEntity> list = interactor.All();
+        List<SampleEntity> list = interactor.all();
         assertNotNull(list);
         assertTrue(list.size() > 0);
     }
 
     @Test
     public void testAllByName() {
-        List<SampleEntity> list = interactor.AllByName("ka");
+        List<SampleEntity> list = interactor.allByName("ka");
         assertNotNull(list);
         assertTrue(list.size() > 0);
 
-        list = interactor.AllByName(null);
+        list = interactor.allByName(null);
         assertNotNull(list);
-        assertEquals(list.size(), 0);
+        assertEquals(0, list.size());
     }
 }

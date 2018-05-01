@@ -4,6 +4,7 @@ public class SampleEntity {
     private String name;
 
     public SampleEntity() {
+        // Do nothing
     }
 
     public SampleEntity name(String name){
