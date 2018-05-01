@@ -31,3 +31,15 @@ cache:
 
 after_success:
   - bash <(curl -s https://codecov.io/bash)
+
+before_deploy:
+  - ./mvnw clean deploy
+
+deploy:
+  local-dir: target/mvn-repo
+  provider: pages
+  skip-cleanup: true
+  github-token: $GITHUB_TOKEN
+  keep-history: true
+  on:
+    branch: master
