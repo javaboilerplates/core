@@ -32,7 +32,7 @@ after_success:
   - bash <(curl -s https://codecov.io/bash)
 
 before_deploy:
-  - ./mvnw clean deploy
+  - ./mvnw clean deploy -DskipTests=true
 
 deploy:
   local-dir: target/mvn-repo
