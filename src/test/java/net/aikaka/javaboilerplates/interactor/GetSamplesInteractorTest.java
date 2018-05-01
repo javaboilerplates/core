@@ -5,6 +5,7 @@ import org.junit.Before;
 import org.junit.Test;
 import java.util.List;
 
+import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertTrue;
 
@@ -29,5 +30,9 @@ public class GetSamplesInteractorTest {
         List<SampleEntity> list = interactor.AllByName("ka");
         assertNotNull(list);
         assertTrue(list.size() > 0);
+
+        list = interactor.AllByName(null);
+        assertNotNull(list);
+        assertEquals(list.size(), 0);
     }
 }
