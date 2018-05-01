@@ -1,6 +1,6 @@
-package net.aikaka.javaboilerplates.interactor;
+package net.aikaka.javaboilerplates.core.interactor;
 
-import net.aikaka.javaboilerplates.entity.SampleEntity;
+import net.aikaka.javaboilerplates.core.entity.SampleEntity;
 
 import java.util.ArrayList;
 import java.util.List;

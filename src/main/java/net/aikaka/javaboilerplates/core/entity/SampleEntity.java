@@ -1,4 +1,4 @@
-package net.aikaka.javaboilerplates.entity;
+package net.aikaka.javaboilerplates.core.entity;
 
 public class SampleEntity {
     private String name;

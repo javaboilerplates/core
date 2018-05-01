@@ -1,1 +1,0 @@
-package net.aikaka.javaboilerplates.entity;
