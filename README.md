@@ -2,6 +2,7 @@
 [![Build Status](https://travis-ci.org/javaboilerplates/core.svg?branch=master)](https://travis-ci.org/javaboilerplates/core)
 [![codecov](https://codecov.io/gh/javaboilerplates/core/branch/master/graph/badge.svg)](https://codecov.io/gh/javaboilerplates/core)
 [![](https://sonarcloud.io/api/project_badges/measure?project=javaboilerplates%3Acore&metric=alert_status)](https://sonarcloud.io/dashboard?id=javaboilerplates%3Acore)
+[![JavaDoc](https://img.shields.io/badge/javadoc-API-blue.svg)](https://javaboilerplates-core.aikaka.net/apidocs/)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/javaboilerplates/core/blob/master/LICENSE)
 ## Installation
 Install dependencies
